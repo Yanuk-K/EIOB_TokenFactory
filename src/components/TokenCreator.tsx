@@ -84,6 +84,7 @@ export default function TokenCreator() {
   // ------------------------------------------------------------
   async function connectWallet() {
     try {
+      if (!window.ethereum) throw new Error("Metamask not installed.");
       const provider = new ethers.BrowserProvider(window.ethereum);
       const signer = await provider.getSigner();
       const addr = await signer.getAddress();
@@ -143,9 +144,12 @@ export default function TokenCreator() {
 
         {/* Connect button – shown only when wallet not connected */}
         {!account && (
+          <div style={styles.form}>
           <button style={styles.connectBtn} onClick={connectWallet} disabled={loading}>
             {loading ? "Connecting…" : "Connect MetaMask"}
           </button>
+          {error && <p style={styles.error}>❌ {error}</p>}
+          </div>
         )}
 
         {/* Connected address */}
