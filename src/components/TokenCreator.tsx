@@ -78,6 +78,7 @@ export default function TokenCreator() {
   const [txHash, setTxHash] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [chainId, setChainId] = useState<Number | null>(null);
   // -----------------------------------------------------------------
 
   // ------------------------------------------------------------
@@ -86,7 +87,9 @@ export default function TokenCreator() {
       const provider = new ethers.BrowserProvider(window.ethereum);
       const signer = await provider.getSigner();
       const addr = await signer.getAddress();
+      const chain = (await provider.getNetwork()).chainId;
       setAccount(addr);
+      setChainId(Number(chain));
     } catch (e: any) {
       setError(e?.message ?? "Failed to connect wallet");
     }
@@ -100,6 +103,7 @@ export default function TokenCreator() {
       setLoading(true);
 
       if (!account) throw new Error("Wallet not connected");
+      if (chainId !== 612) throw new Error("You need to be connected to EIOB Mainnet.");
 
       const provider = new ethers.BrowserProvider(window.ethereum);
       const signer = await provider.getSigner();
