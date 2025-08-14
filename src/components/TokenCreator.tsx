@@ -85,6 +85,7 @@ export default function TokenCreator() {
   async function connectWallet() {
     try {
       if (!window.ethereum) throw new Error("Metamask not installed.");
+      setLoading(true);
       const provider = new ethers.BrowserProvider(window.ethereum);
       const signer = await provider.getSigner();
       const addr = await signer.getAddress();
@@ -93,6 +94,8 @@ export default function TokenCreator() {
       setChainId(Number(chain));
     } catch (e: any) {
       setError(e?.message ?? "Failed to connect wallet");
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -143,12 +146,19 @@ export default function TokenCreator() {
         <h2 style={styles.header}>🪙 EIOB Token Builder</h2>
 
         {/* Connect button – shown only when wallet not connected */}
-        {!account && (
+        {!account && window.ethereum && (
           <div style={styles.form}>
           <button style={styles.connectBtn} onClick={connectWallet} disabled={loading}>
             {loading ? "Connecting…" : "Connect MetaMask"}
           </button>
           {error && <p style={styles.error}>❌ {error}</p>}
+          </div>
+        )}
+
+        {/* Tell user if Metamask is not installed. */}
+        {!window.ethereum && (
+          <div style={styles.form}>
+            Metamask not installed!
           </div>
         )}
 
@@ -202,7 +212,7 @@ export default function TokenCreator() {
 // ----------------------------------------------------------------
 const styles = {
   pageWrapper: {
-    minHeight: "100vh",
+    minHeight: "90vh",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -254,7 +264,7 @@ const styles = {
   label: { fontWeight: 500, fontSize: "0.95rem", color: "#374151" },
   input: {
     width: "100%",
-    padding: "0.6rem 0.3rem",
+    padding: "0.6rem 0rem",
     borderRadius: "6px",
     border: "1px solid #d1d5db",
     fontSize: "1rem",
