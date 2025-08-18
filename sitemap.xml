@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://yanuk-k.github.io/EIOB_TokenFactory/</loc>
-         <lastmod>2025-08-18</lastmod>
+        <loc>https://yanuk-k.github.io/EIOB_TokenFactory/faq/</loc>
+        <lastmod>2025-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://yanuk-k.github.io/EIOB_TokenFactory/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://yanuk-k.github.io/EIOB_TokenFactory/en/faq/"/>
     </url>
     <url>
-         <loc>https://yanuk-k.github.io/EIOB_TokenFactory/about/</loc>
-         <lastmod>2025-08-18</lastmod>
+        <loc>https://yanuk-k.github.io/EIOB_TokenFactory/</loc>
+        <lastmod>2025-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://yanuk-k.github.io/EIOB_TokenFactory/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://yanuk-k.github.io/EIOB_TokenFactory/en/"/>
     </url>
     <url>
-         <loc>https://yanuk-k.github.io/EIOB_TokenFactory/faq/</loc>
-         <lastmod>2025-08-18</lastmod>
+        <loc>https://yanuk-k.github.io/EIOB_TokenFactory/quickstart/</loc>
+        <lastmod>2025-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://yanuk-k.github.io/EIOB_TokenFactory/quickstart/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://yanuk-k.github.io/EIOB_TokenFactory/en/quickstart/"/>
     </url>
     <url>
-         <loc>https://yanuk-k.github.io/EIOB_TokenFactory/en/</loc>
-         <lastmod>2025-08-18</lastmod>
+        <loc>https://yanuk-k.github.io/EIOB_TokenFactory/en/faq/</loc>
+        <lastmod>2025-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://yanuk-k.github.io/EIOB_TokenFactory/en/faq/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://yanuk-k.github.io/EIOB_TokenFactory/faq/"/>
     </url>
     <url>
-         <loc>https://yanuk-k.github.io/EIOB_TokenFactory/en/about/</loc>
-         <lastmod>2025-08-18</lastmod>
+        <loc>https://yanuk-k.github.io/EIOB_TokenFactory/en/</loc>
+        <lastmod>2025-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://yanuk-k.github.io/EIOB_TokenFactory/en/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://yanuk-k.github.io/EIOB_TokenFactory/"/>
     </url>
     <url>
-         <loc>https://yanuk-k.github.io/EIOB_TokenFactory/en/faq/</loc>
-         <lastmod>2025-08-18</lastmod>
+        <loc>https://yanuk-k.github.io/EIOB_TokenFactory/en/quickstart/</loc>
+        <lastmod>2025-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://yanuk-k.github.io/EIOB_TokenFactory/en/quickstart/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://yanuk-k.github.io/EIOB_TokenFactory/quickstart/"/>
     </url>
 </urlset>
