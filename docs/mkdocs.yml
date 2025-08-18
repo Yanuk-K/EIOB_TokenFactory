@@ -1,0 +1,6 @@
+site_name: EIOB TokenFactory
+nav:
+  - Home: index.md
+  - Website Instructions: about.md
+  - FAQ: faq.md
+theme: readthedocs
