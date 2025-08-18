@@ -1,5 +1,5 @@
-# Frequently Asked Questions
+# 자주 묻는 질문
 
-## How do I add the EIOB Mainnet to my Metamask wallet?
+## 메타마스크 지갑에 EIOB 메인넷을 추가하려면 어떻게 해야 하나요?
 
-Head over to [http://eiobexplorer.yeunwook.kim/](http://eiobexplorer.yeunwook.kim/) and click on the **Add EIOB Mainnet** button located at the bottom of the website.
+[http://eiobexplorer.yeunwook.kim/](http://eiobexplorer.yeunwook.kim/)로 이동하여 웹사이트 하단에 있는 **EIOB 메인넷 추가** 버튼을 클릭하세요.

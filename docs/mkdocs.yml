@@ -1,6 +1,19 @@
 site_name: EIOB TokenFactory
+site_url: https://yanuk-k.github.io/EIOB_TokenFactory/
 nav:
   - Home: index.md
   - Website Instructions: about.md
   - FAQ: faq.md
-theme: readthedocs
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.instant
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: 한국어
+      link: /
+      lang: ko
