@@ -30,4 +30,4 @@ Wait for the transaction to finish and check the details of your new token.
 ### 6. Interact with your new token
 ![img6](../src/eiob_token_builder_6.png)
 
-Head over to your **Token** from the transaction page to check the token's smart contract and interact with the new token.
+Head over to your **Token** from the transaction page to check the token's smart contract and interact with the new token by connecting to the block explorer.

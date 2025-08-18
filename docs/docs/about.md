@@ -5,7 +5,7 @@
 2. Metamask 지갑은 EIOB Mainnet에 연결되어있어야 합니다.
 
 
-## ERC20 토큰 발급법
+## EIOB 토큰 빌더로 토큰 생성법
 ### 1. **메타마스크 연결** 버튼 클릭
 ![img1](./src/eiob_token_builder_1.png)
 
@@ -20,14 +20,14 @@
 ### 4. EIOB 메인넷에 토큰 생성하기
 ![img4](./src/eiob_token_builder_4.png)
 
-**토큰 생성** 버튼을 누른 후 Metamask에서 거래를 확인하여 EIOB Mainnet에 새로운 토큰을 생성하세요.
+**Create Token** 버튼을 누른 후 Metamask에서 Transaction을 전송해주세요.
 
 ### 5. 블록 탐색기에서 거래 확인하기
 ![img5](./src/eiob_token_builder_5.png)
 
-거래가 완료될 때까지 기다렸다가 Explorer에서 새 토큰의 세부 정보를 확인하세요.
+Transaction이 완료될 때까지 기다렸다가 Explorer에서 새 토큰의 세부 정보를 확인하세요.
 
-### 6. 새 토큰과 상호 작용하기
+### 6. 새 토큰의 정보 확인 및 각종 기능 사용
 ![img6](./src/eiob_token_builder_6.png)
 
-거래 페이지에서 **Token**로 이동하여 토큰의 스마트 컨트랙트를 확인하고 새 토큰과 상호작용하세요.
+Transaction 페이지에서 **Token**로 이동하면 토큰의 스마트 컨트랙트를 확인하고 Metamask 지갑을 연결하여 ERC20 표준 토큰의 각종 기능을 사용 가능합니다.
